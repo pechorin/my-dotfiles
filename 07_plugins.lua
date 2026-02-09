@@ -8,10 +8,10 @@ require('mini.surround').setup({})
 require('mini.ai').setup({})
 require('mini.cursorword').setup({})
 
-require("snippets").setup({
-  create_cmp_source = true,
-  friendly_snippets = true
-})
+-- require("snippets").setup({
+--   create_cmp_source = true,
+--   friendly_snippets = true
+-- })
 
 require("nvim-autopairs").setup({
   check_ts = true
@@ -44,9 +44,9 @@ vim.cmd [[
 vim.opt.shell = '/bin/zsh -l'
 
 -- fzf
-vim.cmd [[
-  set rtp+=/usr/local/opt/fzf
-]]
+-- vim.cmd [[
+--   set rtp+=/usr/local/opt/fzf
+-- ]]
 
 -- ripgrep
 vim.opt.grepprg = 'rg --color=never'
@@ -67,14 +67,15 @@ require("which-key").setup({
 
 -- require('symbol-usage').setup()
 
-require('tiny-glimmer').setup({
-  paste = { enable = true },
-  undo  = { enable = true },
-  redo  = { enable = true },
-  support = {
-    substitute = { enabled = false }
-  },
-})
+-- A tiny Neovim plugin that adds subtle animations to various operations.
+-- require('tiny-glimmer').setup({
+--   paste = { enable = true },
+--   undo  = { enable = true },
+--   redo  = { enable = true },
+--   support = {
+--     substitute = { enabled = false }
+--   },
+-- })
 
 -- fzf-lua
 require("fzf-lua").setup({
@@ -88,3 +89,8 @@ require("fzf-lua").setup({
     }
   }
 })
+
+-- require("cutlass").setup({
+-- })
+
+require('mtoc').setup({})

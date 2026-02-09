@@ -39,7 +39,7 @@ cmp.setup({
   },
   sources = cmp.config.sources({
     { name = 'nvim_lsp' },
-    { name = 'snippets' },
+    -- { name = 'snippets' },
     {
       name = 'buffer',
       option = {
@@ -51,9 +51,9 @@ cmp.setup({
     -- { name = 'tags' },
     -- { name = "rg" },
   }),
-  snippet = {
-    expand = function(args) vim.snippet.expand(args.body) end,
-  },
+  -- snippet = {
+  --   expand = function(args) vim.snippet.expand(args.body) end,
+  -- },
   -- window = {
   --   completion = cmp.config.window.bordered(),
   --   documentation = cmp.config.window.bordered(),

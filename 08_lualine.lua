@@ -1,6 +1,3 @@
-local gps = require("nvim-gps")
-gps.setup()
-
 local treesitter = require('nvim-treesitter')
 
 -- local current_treesitter_context = function()
@@ -36,7 +33,8 @@ require('lualine').setup({
     },
     lualine_b = {'branch', 'diff'},
     lualine_c = {
-      { treesitter.statusline }
+      -- { treesitter.statusline }
+      { 'filename', path = 1, newfile_status = true }
     },
     lualine_x = {
       -- { 'filename', path = 1, newfile_status = true },

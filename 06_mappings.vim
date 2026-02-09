@@ -46,6 +46,8 @@ KeyMapGroup "Navigation"
   KeyMap nmap <leader>n :NERDTree<CR> "NERDTree for project"
   KeyMap nmap <leader>N :NERDTree %<CR> "NERDTree for current file"
 
+  KeyMap nmap <leader>w :WhichKey<CR> "WhichKey help"
+
   " Neotree
   KeyMap nmap <leader>m :Neotree<CR> "Neotree"
   KeyMap nmap <leader>M :Neotree %<CR> "Neotree for current file"

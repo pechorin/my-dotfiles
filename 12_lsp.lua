@@ -34,9 +34,30 @@ local on_attach = function(client, bufnr)
   -- buf_set_keymap('n', '[d', '<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>', opts)
   -- buf_set_keymap('n', ']d', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>', opts)
   -- buf_set_keymap("n", "<space>f", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
+  --
+  -- Hover documentation
+  -- vim.keymap.set('n', 'K', vim.lsp.buf.hover, { buffer = bufnr })
+
+  -- Signature help
+  -- vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, { buffer = bufnr })
+
+  -- -- Inlay hints toggle
+  -- vim.keymap.set('n', '<leader>th', function()
+  --   vim.lsp.inlay_hint(bufnr, nil)
+  -- end, { buffer = bufnr, desc = "Toggle inlay hints" })
+
+  -- -- Автоматически включить inlay hints
+  -- if client.supports_method("textDocument/inlayHint") then
+  --   vim.lsp.inlay_hint(bufnr, true)
+  -- end
+  --
+  if client.server_capabilities.inlayHintProvider then
+    vim.lsp.inlay_hint(bufnr, true)
+  end
 end
 
--- vim.lsp.inlay_hint.enable(true)
+
+vim.lsp.inlay_hint.enable(true)
 
 -- local on_attach = function(client, bufnr)
 
@@ -74,17 +95,24 @@ lsp_config.gopls.setup {
 
 -- ruby development
 
-lsp_config.rubocop.setup {
-  on_attach = on_attach,
-  cmd = { "bundle", "exec", "rubocop", "--lsp" }
-}
+-- lsp_config.rubocop.setup {
+--   on_attach = on_attach,
+--   cmd = { "bundle", "exec", "rubocop", "--lsp" }
+-- }
 
 lsp_config.solargraph.setup {
   on_attach = on_attach,
   settings = {
     useBunlder = true,
     solargraph = {
-      diagnostics = false,
+      diagnostics = true,          -- включить диагностику
+      formatting = true,           -- включить форматирование
+      autoformat = true,           -- автоматическое форматирование
+      completion = true,           -- автодополнение
+      hover = true,                -- подсказки при наведении
+      symbols = true,              -- символы документа
+      definitions = true,          -- переход к определению
+      references = true,           -- поиск ссылок
     }
   }
 }
@@ -184,6 +212,9 @@ require('go').setup({
   -- lsp_on_attach = true,
   -- on_attach = on_attach,
 })
+
+-- python
+vim.lsp.enable("basedpyright")
 
 -- hover events
 require("hover").setup {
