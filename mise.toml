@@ -170,7 +170,6 @@ KeyRepeat = 1
 
 # macOS applications and cask utilities
 "brew-cask:anybar" = { version = "latest", os = "macos" }
-"brew-cask:basictex" = { version = "latest", os = "macos" }
 "brew-cask:betterdisplay" = { version = "latest", os = "macos" }
 "brew-cask:bruno" = { version = "latest", os = "macos" }
 "brew-cask:calibre" = { version = "latest", os = "macos" }
@@ -193,7 +192,6 @@ KeyRepeat = 1
 "brew-cask:obsidian" = { version = "latest", os = "macos" }
 "brew-cask:pgadmin4" = { version = "latest", os = "macos" }
 "brew-cask:podman-desktop" = { version = "latest", os = "macos" }
-"brew-cask:slack" = { version = "latest", os = "macos" }
 "brew-cask:sublime-merge" = { version = "latest", os = "macos" }
 "brew-cask:sublime-text" = { version = "latest", os = "macos" }
 "brew-cask:syncthing-app" = { version = "latest", os = "macos" }
@@ -205,8 +203,6 @@ KeyRepeat = 1
 # macOS applications from third-party taps
 "brew-cask:muxy-app/tap/muxy" = { version = "latest", os = "macos" }
 "brew-cask:penso/tap/herdr-gpui" = { version = "latest", os = "macos" }
-"brew-cask:ramonvermeulen/whosthere/whosthere" = { version = "latest", os = "macos" }
-"brew-cask:stablyai/orca/orca" = { version = "latest", os = "macos" }
 
 # Retained for reference; not enabled because the cask is disabled.
 # fails_gatekeeper_check
@@ -217,6 +213,3 @@ KeyRepeat = 1
 # "brew-cask:rar" = { version = "latest", os = "macos" }
 # fails_gatekeeper_check
 # "brew-cask:shadowsocksx-ng" = { version = "latest", os = "macos" }
-
-# Legacy brew-cask:syncthing is now brew-cask:syncthing-app.
-# Legacy brew-cask:docker is now brew-cask:docker-desktop.
