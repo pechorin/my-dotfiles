@@ -1,4 +1,4 @@
-# Draft workstation configuration. Nothing has been applied.
+# Workstation configuration.
 # Reference schema: mise v2026.11.5, saved as mise.schema.json.
 min_version = "2026.11.5"
 

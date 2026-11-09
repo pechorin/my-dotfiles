@@ -1,5 +1,5 @@
-# Prepared configuration; not sourced during migration.
-export MISE_GLOBAL_CONFIG_FILE="$HOME/my-mise/mise.toml"
+# Shared workstation configuration.
+export MISE_GLOBAL_CONFIG_FILE="$HOME/my-dotfiles/mise.toml"
 export EDITOR=nvim
 export GOPATH="$HOME/go"
 export ZSH_CACHE_DIR="$HOME/.tmp/zsh"
@@ -21,7 +21,7 @@ compinit
 
 if [[ -r /opt/homebrew/opt/antidote/share/antidote/antidote.zsh ]]; then
   source /opt/homebrew/opt/antidote/share/antidote/antidote.zsh
-  antidote load "$HOME/my-mise/.zsh_plugins.txt"
+  antidote load "$HOME/.zsh_plugins.txt"
 fi
 
 alias be='bundle exec'
