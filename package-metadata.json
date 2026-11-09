@@ -1,0 +1,1428 @@
+{
+  "formula:git": {
+    "url": "https://formulae.brew.sh/api/formula/git.json",
+    "name": "git",
+    "canonical_token": "git",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "2.56.0",
+    "verification": "Homebrew public API"
+  },
+  "formula:bash": {
+    "url": "https://formulae.brew.sh/api/formula/bash.json",
+    "name": "bash",
+    "canonical_token": "bash",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "5.3.20",
+    "verification": "Homebrew public API"
+  },
+  "formula:bash-completion": {
+    "url": "https://formulae.brew.sh/api/formula/bash-completion.json",
+    "name": "bash-completion",
+    "canonical_token": "bash-completion",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "1.3",
+    "verification": "Homebrew public API"
+  },
+  "formula:bash-git-prompt": {
+    "url": "https://formulae.brew.sh/api/formula/bash-git-prompt.json",
+    "name": "bash-git-prompt",
+    "canonical_token": "bash-git-prompt",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "2.7.1",
+    "verification": "Homebrew public API"
+  },
+  "formula:curl": {
+    "url": "https://formulae.brew.sh/api/formula/curl.json",
+    "name": "curl",
+    "canonical_token": "curl",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "8.23.0",
+    "verification": "Homebrew public API"
+  },
+  "formula:openssl@3": {
+    "url": "https://formulae.brew.sh/api/formula/openssl@3.json",
+    "name": "openssl@3",
+    "canonical_token": "openssl@3",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "3.5.9",
+    "verification": "Homebrew public API"
+  },
+  "formula:htop": {
+    "url": "https://formulae.brew.sh/api/formula/htop.json",
+    "name": "htop",
+    "canonical_token": "htop",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "3.5.3",
+    "verification": "Homebrew public API"
+  },
+  "formula:ansible": {
+    "url": "https://formulae.brew.sh/api/formula/ansible.json",
+    "name": "ansible",
+    "canonical_token": "ansible",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "14.6.0",
+    "verification": "Homebrew public API"
+  },
+  "formula:code-minimap": {
+    "url": "https://formulae.brew.sh/api/formula/code-minimap.json",
+    "name": "code-minimap",
+    "canonical_token": "code-minimap",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "0.6.8",
+    "verification": "Homebrew public API"
+  },
+  "formula:shared-mime-info": {
+    "url": "https://formulae.brew.sh/api/formula/shared-mime-info.json",
+    "name": "shared-mime-info",
+    "canonical_token": "shared-mime-info",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "2.5.1",
+    "verification": "Homebrew public API"
+  },
+  "formula:antidote": {
+    "url": "https://formulae.brew.sh/api/formula/antidote.json",
+    "name": "antidote",
+    "canonical_token": "antidote",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "2.3.0",
+    "verification": "Homebrew public API"
+  },
+  "formula:postgresql@15": {
+    "url": "https://formulae.brew.sh/api/formula/postgresql@15.json",
+    "name": "postgresql@15",
+    "canonical_token": "postgresql@15",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "15.19",
+    "verification": "Homebrew public API"
+  },
+  "formula:libpq": {
+    "url": "https://formulae.brew.sh/api/formula/libpq.json",
+    "name": "libpq",
+    "canonical_token": "libpq",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "18.6",
+    "verification": "Homebrew public API"
+  },
+  "formula:redis": {
+    "url": "https://formulae.brew.sh/api/formula/redis.json",
+    "name": "redis",
+    "canonical_token": "redis",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "8.10.3",
+    "verification": "Homebrew public API"
+  },
+  "formula:neovim": {
+    "url": "https://formulae.brew.sh/api/formula/neovim.json",
+    "name": "neovim",
+    "canonical_token": "neovim",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "0.12.6",
+    "verification": "Homebrew public API"
+  },
+  "formula:lua": {
+    "url": "https://formulae.brew.sh/api/formula/lua.json",
+    "name": "lua",
+    "canonical_token": "lua",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "5.5.1",
+    "verification": "Homebrew public API"
+  },
+  "formula:lua-language-server": {
+    "url": "https://formulae.brew.sh/api/formula/lua-language-server.json",
+    "name": "lua-language-server",
+    "canonical_token": "lua-language-server",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "3.19.2",
+    "verification": "Homebrew public API"
+  },
+  "formula:ripgrep": {
+    "url": "https://formulae.brew.sh/api/formula/ripgrep.json",
+    "name": "ripgrep",
+    "canonical_token": "ripgrep",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "15.2.0",
+    "verification": "Homebrew public API"
+  },
+  "formula:fd": {
+    "url": "https://formulae.brew.sh/api/formula/fd.json",
+    "name": "fd",
+    "canonical_token": "fd",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "10.5.2",
+    "verification": "Homebrew public API"
+  },
+  "formula:eza": {
+    "url": "https://formulae.brew.sh/api/formula/eza.json",
+    "name": "eza",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "0.23.5"
+  },
+  "formula:fzf": {
+    "url": "https://formulae.brew.sh/api/formula/fzf.json",
+    "name": "fzf",
+    "canonical_token": "fzf",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "0.75.0",
+    "verification": "Homebrew public API"
+  },
+  "formula:jq": {
+    "url": "https://formulae.brew.sh/api/formula/jq.json",
+    "name": "jq",
+    "canonical_token": "jq",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "1.8.2",
+    "verification": "Homebrew public API"
+  },
+  "formula:kubernetes-cli": {
+    "url": "https://formulae.brew.sh/api/formula/kubernetes-cli.json",
+    "name": "kubernetes-cli",
+    "canonical_token": "kubernetes-cli",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "1.37.2",
+    "verification": "Homebrew public API"
+  },
+  "formula:kubectx": {
+    "url": "https://formulae.brew.sh/api/formula/kubectx.json",
+    "name": "kubectx",
+    "canonical_token": "kubectx",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "0.11.0",
+    "verification": "Homebrew public API"
+  },
+  "formula:k9s": {
+    "url": "https://formulae.brew.sh/api/formula/k9s.json",
+    "name": "k9s",
+    "canonical_token": "k9s",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "0.51.0",
+    "verification": "Homebrew public API"
+  },
+  "formula:stern": {
+    "url": "https://formulae.brew.sh/api/formula/stern.json",
+    "name": "stern",
+    "canonical_token": "stern",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "1.35.0",
+    "verification": "Homebrew public API"
+  },
+  "formula:universal-ctags": {
+    "url": "https://formulae.brew.sh/api/formula/universal-ctags.json",
+    "name": "universal-ctags",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "6.2.1"
+  },
+  "formula:openconnect": {
+    "url": "https://formulae.brew.sh/api/formula/openconnect.json",
+    "name": "openconnect",
+    "canonical_token": "openconnect",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "9.21",
+    "verification": "Homebrew public API"
+  },
+  "formula:s3cmd": {
+    "url": "https://formulae.brew.sh/api/formula/s3cmd.json",
+    "name": "s3cmd",
+    "canonical_token": "s3cmd",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "2.4.0",
+    "verification": "Homebrew public API"
+  },
+  "formula:openjdk": {
+    "url": "https://formulae.brew.sh/api/formula/openjdk.json",
+    "name": "openjdk",
+    "canonical_token": "openjdk",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "27.0.1.0.3",
+    "verification": "Homebrew public API"
+  },
+  "formula:git-lfs": {
+    "url": "https://formulae.brew.sh/api/formula/git-lfs.json",
+    "name": "git-lfs",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "3.8.1"
+  },
+  "formula:git-delta": {
+    "url": "https://formulae.brew.sh/api/formula/git-delta.json",
+    "name": "git-delta",
+    "canonical_token": "git-delta",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "0.20.1",
+    "verification": "Homebrew public API"
+  },
+  "formula:stylua": {
+    "url": "https://formulae.brew.sh/api/formula/stylua.json",
+    "name": "stylua",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "2.6.0"
+  },
+  "formula:uv": {
+    "url": "https://formulae.brew.sh/api/formula/uv.json",
+    "name": "uv",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "0.13.7"
+  },
+  "cask:font-roboto": {
+    "url": "https://formulae.brew.sh/api/cask/font-roboto.json",
+    "name": [
+      "Roboto"
+    ],
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "latest"
+  },
+  "cask:font-fira-code": {
+    "url": "https://formulae.brew.sh/api/cask/font-fira-code.json",
+    "name": [
+      "Fira Code"
+    ],
+    "canonical_token": "font-fira-code",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "6.2",
+    "verification": "Homebrew public API"
+  },
+  "cask:font-cascadia-code": {
+    "url": "https://formulae.brew.sh/api/cask/font-cascadia-code.json",
+    "name": [
+      "Cascadia Code"
+    ],
+    "canonical_token": "font-cascadia-code",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "2407.24",
+    "verification": "Homebrew public API"
+  },
+  "cask:font-jetbrains-mono": {
+    "url": "https://formulae.brew.sh/api/cask/font-jetbrains-mono.json",
+    "name": [
+      "JetBrains Mono"
+    ],
+    "canonical_token": "font-jetbrains-mono",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "2.304",
+    "verification": "Homebrew public API"
+  },
+  "cask:font-iosevka": {
+    "url": "https://formulae.brew.sh/api/cask/font-iosevka.json",
+    "name": [
+      "Iosevka"
+    ],
+    "canonical_token": "font-iosevka",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "34.9.1",
+    "verification": "Homebrew public API"
+  },
+  "cask:font-fantasque-sans-mono": {
+    "url": "https://formulae.brew.sh/api/cask/font-fantasque-sans-mono.json",
+    "name": [
+      "Fantasque Sans Mono"
+    ],
+    "canonical_token": "font-fantasque-sans-mono",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "1.8.0",
+    "verification": "Homebrew public API"
+  },
+  "cask:font-monoid": {
+    "url": "https://formulae.brew.sh/api/cask/font-monoid.json",
+    "name": [
+      "Monoid"
+    ],
+    "canonical_token": "font-monoid",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "0.61",
+    "verification": "Homebrew public API"
+  },
+  "cask:font-fira-code-nerd-font": {
+    "url": "https://formulae.brew.sh/api/cask/font-fira-code-nerd-font.json",
+    "name": [
+      "FiraCode Nerd Font (Fira Code)"
+    ],
+    "canonical_token": "font-fira-code-nerd-font",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "3.5.1",
+    "verification": "Homebrew public API"
+  },
+  "cask:font-jetbrains-mono-nerd-font": {
+    "url": "https://formulae.brew.sh/api/cask/font-jetbrains-mono-nerd-font.json",
+    "name": [
+      "JetBrainsMono Nerd Font families (JetBrains Mono)"
+    ],
+    "canonical_token": "font-jetbrains-mono-nerd-font",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "3.5.1",
+    "verification": "Homebrew public API"
+  },
+  "cask:font-iosevka-nerd-font": {
+    "url": "https://formulae.brew.sh/api/cask/font-iosevka-nerd-font.json",
+    "name": [
+      "Iosevka Nerd Font (Iosevka)"
+    ],
+    "canonical_token": "font-iosevka-nerd-font",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "3.5.1",
+    "verification": "Homebrew public API"
+  },
+  "cask:font-droid-sans-mono-nerd-font": {
+    "url": "https://formulae.brew.sh/api/cask/font-droid-sans-mono-nerd-font.json",
+    "name": [
+      "DroidSansM Nerd Font (Droid Sans Mono)"
+    ],
+    "canonical_token": "font-droid-sans-mono-nerd-font",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "3.5.1",
+    "verification": "Homebrew public API"
+  },
+  "cask:font-fantasque-sans-mono-nerd-font": {
+    "url": "https://formulae.brew.sh/api/cask/font-fantasque-sans-mono-nerd-font.json",
+    "name": [
+      "FantasqueSansM Nerd Font (Fantasque Sans Mono)"
+    ],
+    "canonical_token": "font-fantasque-sans-mono-nerd-font",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "3.5.1",
+    "verification": "Homebrew public API"
+  },
+  "cask:font-monoid-nerd-font": {
+    "url": "https://formulae.brew.sh/api/cask/font-monoid-nerd-font.json",
+    "name": [
+      "Monoid Nerd Font (Monoid)"
+    ],
+    "canonical_token": "font-monoid-nerd-font",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "3.5.1",
+    "verification": "Homebrew public API"
+  },
+  "cask:iterm2": {
+    "url": "https://formulae.brew.sh/api/cask/iterm2.json",
+    "name": [
+      "iTerm2"
+    ],
+    "canonical_token": "iterm2",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "3.7.7",
+    "verification": "Homebrew public API"
+  },
+  "cask:obsidian": {
+    "url": "https://formulae.brew.sh/api/cask/obsidian.json",
+    "name": [
+      "Obsidian"
+    ],
+    "canonical_token": "obsidian",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "1.15.0",
+    "verification": "Homebrew public API"
+  },
+  "cask:yandex-disk": {
+    "url": "https://formulae.brew.sh/api/cask/yandex-disk.json",
+    "name": [
+      "Yandex.Disk"
+    ],
+    "canonical_token": "yandex-disk",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "3.2.51,3361",
+    "verification": "Homebrew public API"
+  },
+  "cask:keepassxc": {
+    "url": "https://formulae.brew.sh/api/cask/keepassxc.json",
+    "name": [
+      "KeePassXC"
+    ],
+    "canonical_token": "keepassxc",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "2.8.0,2.8.0-1",
+    "verification": "Homebrew public API"
+  },
+  "cask:firefox": {
+    "url": "https://formulae.brew.sh/api/cask/firefox.json",
+    "name": [
+      "Mozilla Firefox"
+    ],
+    "canonical_token": "firefox",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "159.0.1",
+    "verification": "Homebrew public API"
+  },
+  "cask:slack": {
+    "url": "https://formulae.brew.sh/api/cask/slack.json",
+    "name": [
+      "Slack"
+    ],
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "4.53.280"
+  },
+  "cask:telegram-desktop": {
+    "url": "https://formulae.brew.sh/api/cask/telegram-desktop.json",
+    "name": [
+      "Telegram Desktop"
+    ],
+    "canonical_token": "telegram-desktop",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "7.4.1",
+    "verification": "Homebrew public API"
+  },
+  "cask:syncthing": {
+    "url": "https://formulae.brew.sh/api/cask/syncthing.json",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "cask:vlc": {
+    "url": "https://formulae.brew.sh/api/cask/vlc.json",
+    "name": [
+      "VLC media player"
+    ],
+    "canonical_token": "vlc",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "3.0.24",
+    "verification": "Homebrew public API"
+  },
+  "cask:shadowsocksx-ng": {
+    "url": "https://formulae.brew.sh/api/cask/shadowsocksx-ng.json",
+    "name": [
+      "ShadowsocksX-NG"
+    ],
+    "canonical_token": "shadowsocksx-ng",
+    "disabled": true,
+    "deprecated": false,
+    "reason": "fails_gatekeeper_check",
+    "version": "1.10.3",
+    "verification": "Homebrew public API"
+  },
+  "cask:alacritty": {
+    "url": "https://formulae.brew.sh/api/cask/alacritty.json",
+    "name": [
+      "Alacritty"
+    ],
+    "disabled": true,
+    "deprecated": false,
+    "reason": "fails_gatekeeper_check",
+    "version": "0.17.0"
+  },
+  "cask:podman-desktop": {
+    "url": "https://formulae.brew.sh/api/cask/podman-desktop.json",
+    "name": [
+      "Podman Desktop"
+    ],
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "1.30.5"
+  },
+  "cask:anybar": {
+    "url": "https://formulae.brew.sh/api/cask/anybar.json",
+    "name": [
+      "AnyBar"
+    ],
+    "canonical_token": "anybar",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "0.2.3",
+    "verification": "Homebrew public API"
+  },
+  "formula:syncthing": {
+    "url": "https://formulae.brew.sh/api/formula/syncthing.json",
+    "name": "syncthing",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "2.1.7"
+  },
+  "formula:cask": {
+    "url": "https://formulae.brew.sh/api/formula/cask.json",
+    "name": "cask",
+    "canonical_token": "cask",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "0.9.1",
+    "verification": "Homebrew public API"
+  },
+  "formula:ast-grep": {
+    "url": "https://formulae.brew.sh/api/formula/ast-grep.json",
+    "name": "ast-grep",
+    "canonical_token": "ast-grep",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "0.51.1",
+    "verification": "Homebrew public API"
+  },
+  "formula:bat": {
+    "url": "https://formulae.brew.sh/api/formula/bat.json",
+    "name": "bat",
+    "canonical_token": "bat",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "0.26.1",
+    "verification": "Homebrew public API"
+  },
+  "formula:pavsap/clickhouse/clickhouse-server": {
+    "url": "https://github.com/pavsap/homebrew-clickhouse/blob/HEAD/Formula/c/clickhouse-server.rb",
+    "name": "clickhouse-server",
+    "disabled": false,
+    "deprecated": false,
+    "version": null,
+    "verification": "published tap definition read as text; Ruby not evaluated",
+    "definition_sha256": "39365e740489a6ba04e0c490ff74233ac6fc12550392f0b0d7457af728dee5f4",
+    "tap": "pavsap/clickhouse",
+    "requires_backend_review": false,
+    "definition_url": "https://raw.githubusercontent.com/pavsap/homebrew-clickhouse/HEAD/Formula/c/clickhouse-server.rb"
+  },
+  "formula:coreutils": {
+    "url": "https://formulae.brew.sh/api/formula/coreutils.json",
+    "name": "coreutils",
+    "canonical_token": "coreutils",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "9.12",
+    "verification": "Homebrew public API"
+  },
+  "formula:dive": {
+    "url": "https://formulae.brew.sh/api/formula/dive.json",
+    "name": "dive",
+    "canonical_token": "dive",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "0.13.1",
+    "verification": "Homebrew public API"
+  },
+  "formula:docker-completion": {
+    "url": "https://formulae.brew.sh/api/formula/docker-completion.json",
+    "name": "docker-completion",
+    "canonical_token": "docker-completion",
+    "disabled": false,
+    "deprecated": true,
+    "reason": "deprecated_upstream",
+    "version": "29.9.3",
+    "verification": "Homebrew public API"
+  },
+  "formula:exiftool": {
+    "url": "https://formulae.brew.sh/api/formula/exiftool.json",
+    "name": "exiftool",
+    "canonical_token": "exiftool",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "13.55",
+    "verification": "Homebrew public API"
+  },
+  "formula:fish": {
+    "url": "https://formulae.brew.sh/api/formula/fish.json",
+    "name": "fish",
+    "canonical_token": "fish",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "4.9.3",
+    "verification": "Homebrew public API"
+  },
+  "formula:gh": {
+    "url": "https://formulae.brew.sh/api/formula/gh.json",
+    "name": "gh",
+    "canonical_token": "gh",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "2.103.3",
+    "verification": "Homebrew public API"
+  },
+  "formula:git-quick-stats": {
+    "url": "https://formulae.brew.sh/api/formula/git-quick-stats.json",
+    "name": "git-quick-stats",
+    "canonical_token": "git-quick-stats",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "2.11.0",
+    "verification": "Homebrew public API"
+  },
+  "formula:gnu-sed": {
+    "url": "https://formulae.brew.sh/api/formula/gnu-sed.json",
+    "name": "gnu-sed",
+    "canonical_token": "gnu-sed",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "4.10",
+    "verification": "Homebrew public API"
+  },
+  "formula:golangci-lint": {
+    "url": "https://formulae.brew.sh/api/formula/golangci-lint.json",
+    "name": "golangci-lint",
+    "canonical_token": "golangci-lint",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "2.15.0",
+    "verification": "Homebrew public API"
+  },
+  "formula:control-theory/gonzo/gonzo": {
+    "url": "https://github.com/control-theory/homebrew-gonzo/blob/HEAD/Formula/gonzo.rb",
+    "name": "gonzo",
+    "disabled": false,
+    "deprecated": false,
+    "version": "0.4.3",
+    "verification": "published tap definition read as text; Ruby not evaluated",
+    "definition_sha256": "8acdb2b3c4b2c72f66a4381941475ac960d3a66a34d9bd51587a2118884b7ef0",
+    "tap": "control-theory/gonzo",
+    "requires_backend_review": false,
+    "definition_url": "https://raw.githubusercontent.com/control-theory/homebrew-gonzo/HEAD/Formula/gonzo.rb"
+  },
+  "formula:helix": {
+    "url": "https://formulae.brew.sh/api/formula/helix.json",
+    "name": "helix",
+    "canonical_token": "helix",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "25.07.1",
+    "verification": "Homebrew public API"
+  },
+  "formula:herdr": {
+    "url": "https://formulae.brew.sh/api/formula/herdr.json",
+    "name": "herdr",
+    "canonical_token": "herdr",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "0.9.5",
+    "verification": "Homebrew public API"
+  },
+  "formula:johanneskaufmann/tap/html2markdown": {
+    "url": "https://github.com/johanneskaufmann/homebrew-tap/blob/HEAD/html2markdown.rb",
+    "name": "html2markdown",
+    "disabled": false,
+    "deprecated": false,
+    "version": "2.5.2",
+    "verification": "published tap definition read as text; Ruby not evaluated",
+    "definition_sha256": "f7fa3e4fbaf8663dcc43c53d533f2f01582b2778ba613743747e8ebacc807d02",
+    "tap": "johanneskaufmann/tap",
+    "requires_backend_review": false,
+    "definition_url": "https://raw.githubusercontent.com/johanneskaufmann/homebrew-tap/HEAD/html2markdown.rb"
+  },
+  "formula:imagemagick": {
+    "url": "https://formulae.brew.sh/api/formula/imagemagick.json",
+    "name": "imagemagick",
+    "canonical_token": "imagemagick",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "7.1.2-35",
+    "verification": "Homebrew public API"
+  },
+  "formula:lazygit": {
+    "url": "https://formulae.brew.sh/api/formula/lazygit.json",
+    "name": "lazygit",
+    "canonical_token": "lazygit",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "0.66.3",
+    "verification": "Homebrew public API"
+  },
+  "formula:mysql": {
+    "url": "https://formulae.brew.sh/api/formula/mysql.json",
+    "name": "mysql",
+    "canonical_token": "mysql",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "26.10.0",
+    "verification": "Homebrew public API"
+  },
+  "formula:naabu": {
+    "url": "https://formulae.brew.sh/api/formula/naabu.json",
+    "name": "naabu",
+    "canonical_token": "naabu",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "2.7.0",
+    "verification": "Homebrew public API"
+  },
+  "formula:pandoc": {
+    "url": "https://formulae.brew.sh/api/formula/pandoc.json",
+    "name": "pandoc",
+    "canonical_token": "pandoc",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "3.13",
+    "verification": "Homebrew public API"
+  },
+  "formula:pgbadger": {
+    "url": "https://formulae.brew.sh/api/formula/pgbadger.json",
+    "name": "pgbadger",
+    "canonical_token": "pgbadger",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "13.3",
+    "verification": "Homebrew public API"
+  },
+  "formula:pkgconf": {
+    "url": "https://formulae.brew.sh/api/formula/pkgconf.json",
+    "name": "pkgconf",
+    "canonical_token": "pkgconf",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "3.0.10",
+    "verification": "Homebrew public API"
+  },
+  "formula:pngpaste": {
+    "url": "https://formulae.brew.sh/api/formula/pngpaste.json",
+    "name": "pngpaste",
+    "canonical_token": "pngpaste",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "0.2.3",
+    "verification": "Homebrew public API"
+  },
+  "formula:poppler": {
+    "url": "https://formulae.brew.sh/api/formula/poppler.json",
+    "name": "poppler",
+    "canonical_token": "poppler",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "26.11.0",
+    "verification": "Homebrew public API"
+  },
+  "formula:protobuf": {
+    "url": "https://formulae.brew.sh/api/formula/protobuf.json",
+    "name": "protobuf",
+    "canonical_token": "protobuf",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "36.2",
+    "verification": "Homebrew public API"
+  },
+  "formula:proxychains-ng": {
+    "url": "https://formulae.brew.sh/api/formula/proxychains-ng.json",
+    "name": "proxychains-ng",
+    "canonical_token": "proxychains-ng",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "4.17",
+    "verification": "Homebrew public API"
+  },
+  "formula:pspg": {
+    "url": "https://formulae.brew.sh/api/formula/pspg.json",
+    "name": "pspg",
+    "canonical_token": "pspg",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "5.9.1",
+    "verification": "Homebrew public API"
+  },
+  "formula:qemu": {
+    "url": "https://formulae.brew.sh/api/formula/qemu.json",
+    "name": "qemu",
+    "canonical_token": "qemu",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "11.1.3",
+    "verification": "Homebrew public API"
+  },
+  "formula:rclone": {
+    "url": "https://formulae.brew.sh/api/formula/rclone.json",
+    "name": "rclone",
+    "canonical_token": "rclone",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "1.76.0",
+    "verification": "Homebrew public API"
+  },
+  "formula:restic": {
+    "url": "https://formulae.brew.sh/api/formula/restic.json",
+    "name": "restic",
+    "canonical_token": "restic",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "0.19.1",
+    "verification": "Homebrew public API"
+  },
+  "formula:resticprofile": {
+    "url": "https://formulae.brew.sh/api/formula/resticprofile.json",
+    "name": "resticprofile",
+    "canonical_token": "resticprofile",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "0.33.1",
+    "verification": "Homebrew public API"
+  },
+  "formula:sem-cli": {
+    "url": "https://formulae.brew.sh/api/formula/sem-cli.json",
+    "name": "sem-cli",
+    "canonical_token": "sem-cli",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "0.29.1",
+    "verification": "Homebrew public API"
+  },
+  "formula:tesseract": {
+    "url": "https://formulae.brew.sh/api/formula/tesseract.json",
+    "name": "tesseract",
+    "canonical_token": "tesseract",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "5.5.4",
+    "verification": "Homebrew public API"
+  },
+  "formula:tree": {
+    "url": "https://formulae.brew.sh/api/formula/tree.json",
+    "name": "tree",
+    "canonical_token": "tree",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "2.3.2",
+    "verification": "Homebrew public API"
+  },
+  "formula:utf8proc": {
+    "url": "https://formulae.brew.sh/api/formula/utf8proc.json",
+    "name": "utf8proc",
+    "canonical_token": "utf8proc",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "2.12.0",
+    "verification": "Homebrew public API"
+  },
+  "formula:vim": {
+    "url": "https://formulae.brew.sh/api/formula/vim.json",
+    "name": "vim",
+    "canonical_token": "vim",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "9.2.1308",
+    "verification": "Homebrew public API"
+  },
+  "formula:vips": {
+    "url": "https://formulae.brew.sh/api/formula/vips.json",
+    "name": "vips",
+    "canonical_token": "vips",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "8.18.7",
+    "verification": "Homebrew public API"
+  },
+  "formula:wget": {
+    "url": "https://formulae.brew.sh/api/formula/wget.json",
+    "name": "wget",
+    "canonical_token": "wget",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "1.25.0",
+    "verification": "Homebrew public API"
+  },
+  "formula:wireshark": {
+    "url": "https://formulae.brew.sh/api/formula/wireshark.json",
+    "name": "wireshark",
+    "canonical_token": "wireshark",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "4.6.9",
+    "verification": "Homebrew public API"
+  },
+  "formula:furkankly/tap/zoetrope": {
+    "url": "https://github.com/furkankly/homebrew-tap/blob/HEAD/Formula/zoetrope.rb",
+    "name": "zoetrope",
+    "disabled": false,
+    "deprecated": false,
+    "version": "0.2.0",
+    "verification": "published tap definition read as text; Ruby not evaluated",
+    "definition_sha256": "6a48dceb32bd04f026099dfa54034527ca3f8382630c75d6eb3c269d3042bdb4",
+    "tap": "furkankly/tap",
+    "requires_backend_review": false,
+    "definition_url": "https://raw.githubusercontent.com/furkankly/homebrew-tap/HEAD/Formula/zoetrope.rb"
+  },
+  "cask:basictex": {
+    "url": "https://formulae.brew.sh/api/cask/basictex.json",
+    "name": [
+      "BasicTeX"
+    ],
+    "canonical_token": "basictex",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "2026.0301",
+    "verification": "Homebrew public API"
+  },
+  "cask:betterdisplay": {
+    "url": "https://formulae.brew.sh/api/cask/betterdisplay.json",
+    "name": [
+      "BetterDisplay"
+    ],
+    "canonical_token": "betterdisplay",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "5.2.1",
+    "verification": "Homebrew public API"
+  },
+  "cask:bruno": {
+    "url": "https://formulae.brew.sh/api/cask/bruno.json",
+    "name": [
+      "Bruno"
+    ],
+    "canonical_token": "bruno",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "4.3.0",
+    "verification": "Homebrew public API"
+  },
+  "cask:calibre": {
+    "url": "https://formulae.brew.sh/api/cask/calibre.json",
+    "name": [
+      "calibre"
+    ],
+    "canonical_token": "calibre",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "9.18.0",
+    "verification": "Homebrew public API"
+  },
+  "cask:chatgpt": {
+    "url": "https://formulae.brew.sh/api/cask/chatgpt.json",
+    "name": [
+      "ChatGPT"
+    ],
+    "canonical_token": "chatgpt",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "26.1103.60933",
+    "verification": "Homebrew public API"
+  },
+  "cask:clickhouse": {
+    "url": "https://formulae.brew.sh/api/cask/clickhouse.json",
+    "name": [
+      "ClickHouse"
+    ],
+    "canonical_token": "clickhouse",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "26.10.2.103-stable",
+    "verification": "Homebrew public API"
+  },
+  "cask:codex": {
+    "url": "https://formulae.brew.sh/api/cask/codex.json",
+    "name": [
+      "Codex"
+    ],
+    "canonical_token": "codex",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "0.167.0",
+    "verification": "Homebrew public API"
+  },
+  "cask:db-browser-for-sqlite": {
+    "url": "https://formulae.brew.sh/api/cask/db-browser-for-sqlite.json",
+    "name": [
+      "DB Browser for SQLite"
+    ],
+    "canonical_token": "db-browser-for-sqlite",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "3.13.1",
+    "verification": "Homebrew public API"
+  },
+  "cask:dbeaver-community": {
+    "url": "https://formulae.brew.sh/api/cask/dbeaver-community.json",
+    "name": [
+      "DBeaver Community Edition"
+    ],
+    "canonical_token": "dbeaver-community",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "26.2.4",
+    "verification": "Homebrew public API"
+  },
+  "cask:docker-desktop": {
+    "url": "https://formulae.brew.sh/api/cask/docker-desktop.json",
+    "name": [
+      "Docker Desktop",
+      "Docker Community Edition",
+      "Docker CE"
+    ],
+    "canonical_token": "docker-desktop",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "4.99.0,245822",
+    "verification": "Homebrew public API"
+  },
+  "cask:nanxstats/tap/font-anthrosevka-mono": {
+    "url": "https://github.com/nanxstats/homebrew-tap/blob/HEAD/Casks/font-anthrosevka-mono.rb",
+    "name": "font-anthrosevka-mono",
+    "disabled": false,
+    "deprecated": false,
+    "version": "0.4.0",
+    "verification": "published tap definition read as text; Ruby not evaluated",
+    "definition_sha256": "accd1cae2802e479b8733471a8e0249762c6c122d5c2646ecbc708f5ade0c97a",
+    "tap": "nanxstats/tap",
+    "requires_backend_review": false,
+    "definition_url": "https://raw.githubusercontent.com/nanxstats/homebrew-tap/HEAD/Casks/font-anthrosevka-mono.rb"
+  },
+  "cask:font-ubuntu-mono-nerd-font": {
+    "url": "https://formulae.brew.sh/api/cask/font-ubuntu-mono-nerd-font.json",
+    "name": [
+      "UbuntuMono Nerd Font (Ubuntu Mono)"
+    ],
+    "canonical_token": "font-ubuntu-mono-nerd-font",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "3.5.1",
+    "verification": "Homebrew public API"
+  },
+  "cask:ghostex": {
+    "url": "https://formulae.brew.sh/api/cask/ghostex.json",
+    "name": [
+      "Ghostex"
+    ],
+    "canonical_token": "ghostex",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "11.2.1",
+    "verification": "Homebrew public API"
+  },
+  "cask:ghostty": {
+    "url": "https://formulae.brew.sh/api/cask/ghostty.json",
+    "name": [
+      "Ghostty"
+    ],
+    "canonical_token": "ghostty",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "1.4.0",
+    "verification": "Homebrew public API"
+  },
+  "cask:gimp": {
+    "url": "https://formulae.brew.sh/api/cask/gimp.json",
+    "name": [
+      "GIMP",
+      "GNU Image Manipulation Program"
+    ],
+    "canonical_token": "gimp",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "3.2.8",
+    "verification": "Homebrew public API"
+  },
+  "cask:google-chrome": {
+    "url": "https://formulae.brew.sh/api/cask/google-chrome.json",
+    "name": [
+      "Google Chrome"
+    ],
+    "canonical_token": "google-chrome",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "157.0.8103.39",
+    "verification": "Homebrew public API"
+  },
+  "cask:penso/tap/herdr-gpui": {
+    "url": "https://github.com/penso/homebrew-tap/blob/HEAD/Casks/herdr-gpui.rb",
+    "name": "herdr-gpui",
+    "disabled": false,
+    "deprecated": false,
+    "version": "20261108.1",
+    "verification": "published tap definition read as text; Ruby not evaluated",
+    "definition_sha256": "8c205e481aa60daf459351e767c3e5e5506d814cb79534dd9a36f9664d5b2d1f",
+    "tap": "penso/tap",
+    "requires_backend_review": false,
+    "definition_url": "https://raw.githubusercontent.com/penso/homebrew-tap/HEAD/Casks/herdr-gpui.rb"
+  },
+  "cask:libreoffice": {
+    "url": "https://formulae.brew.sh/api/cask/libreoffice.json",
+    "name": [
+      "LibreOffice"
+    ],
+    "canonical_token": "libreoffice",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "26.8.2",
+    "verification": "Homebrew public API"
+  },
+  "cask:macdown": {
+    "url": "https://formulae.brew.sh/api/cask/macdown.json",
+    "name": [
+      "MacDown"
+    ],
+    "canonical_token": "macdown",
+    "disabled": true,
+    "deprecated": false,
+    "reason": "fails_gatekeeper_check",
+    "version": "0.7.2",
+    "verification": "Homebrew public API"
+  },
+  "cask:macfuse": {
+    "url": "https://formulae.brew.sh/api/cask/macfuse.json",
+    "name": [
+      "macFUSE"
+    ],
+    "canonical_token": "macfuse",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "5.5.0",
+    "verification": "Homebrew public API"
+  },
+  "cask:muxy-app/tap/muxy": {
+    "url": "https://github.com/muxy-app/homebrew-tap/blob/HEAD/Casks/muxy.rb",
+    "name": "muxy",
+    "disabled": false,
+    "deprecated": false,
+    "version": "2.4.0",
+    "verification": "published tap definition read as text; Ruby not evaluated",
+    "definition_sha256": "8cf82230908c7ea5568edf7f406fbceacdb0f80bd50281d7e4544dcc5ffa3f87",
+    "tap": "muxy-app/tap",
+    "requires_backend_review": false,
+    "definition_url": "https://raw.githubusercontent.com/muxy-app/homebrew-tap/HEAD/Casks/muxy.rb"
+  },
+  "cask:ngrok": {
+    "url": "https://formulae.brew.sh/api/cask/ngrok.json",
+    "name": [
+      "ngrok"
+    ],
+    "canonical_token": "ngrok",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "3.39.13,msmi2kd3cjc,a",
+    "verification": "Homebrew public API"
+  },
+  "cask:stablyai/orca/orca": {
+    "url": "https://github.com/stablyai/homebrew-orca/blob/HEAD/Casks/orca.rb",
+    "name": "orca",
+    "disabled": false,
+    "deprecated": false,
+    "version": "1.4.254",
+    "verification": "published tap definition read as text; Ruby not evaluated",
+    "definition_sha256": "08d19842b25b9c66aa54de71e4eecb4c8714f83ce751768bcf7cac4cc74b8253",
+    "tap": "stablyai/orca",
+    "requires_backend_review": true,
+    "definition_url": "https://raw.githubusercontent.com/stablyai/homebrew-orca/HEAD/Casks/orca.rb"
+  },
+  "cask:pgadmin4": {
+    "url": "https://formulae.brew.sh/api/cask/pgadmin4.json",
+    "name": [
+      "pgAdmin4"
+    ],
+    "canonical_token": "pgadmin4",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "9.19",
+    "verification": "Homebrew public API"
+  },
+  "cask:rar": {
+    "url": "https://formulae.brew.sh/api/cask/rar.json",
+    "name": [
+      "RAR Archiver"
+    ],
+    "canonical_token": "rar",
+    "disabled": true,
+    "deprecated": false,
+    "reason": "fails_gatekeeper_check",
+    "version": "7.23",
+    "verification": "Homebrew public API"
+  },
+  "cask:sublime-merge": {
+    "url": "https://formulae.brew.sh/api/cask/sublime-merge.json",
+    "name": [
+      "Sublime Merge"
+    ],
+    "canonical_token": "sublime-merge",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "2136",
+    "verification": "Homebrew public API"
+  },
+  "cask:sublime-text": {
+    "url": "https://formulae.brew.sh/api/cask/sublime-text.json",
+    "name": [
+      "Sublime Text"
+    ],
+    "canonical_token": "sublime-text",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "4215",
+    "verification": "Homebrew public API"
+  },
+  "cask:syncthing-app": {
+    "url": "https://formulae.brew.sh/api/cask/syncthing-app.json",
+    "name": [
+      "Syncthing"
+    ],
+    "canonical_token": "syncthing-app",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "2.1.6-1",
+    "verification": "Homebrew public API"
+  },
+  "cask:visual-studio-code": {
+    "url": "https://formulae.brew.sh/api/cask/visual-studio-code.json",
+    "name": [
+      "Microsoft Visual Studio Code",
+      "VS Code"
+    ],
+    "canonical_token": "visual-studio-code",
+    "disabled": false,
+    "deprecated": false,
+    "reason": null,
+    "version": "1.145.2",
+    "verification": "Homebrew public API"
+  },
+  "cask:ramonvermeulen/whosthere/whosthere": {
+    "url": "https://github.com/ramonvermeulen/homebrew-whosthere/blob/HEAD/Casks/whosthere.rb",
+    "name": "whosthere",
+    "disabled": false,
+    "deprecated": false,
+    "version": "0.9.0",
+    "verification": "published tap definition read as text; Ruby not evaluated",
+    "definition_sha256": "d6dfd330f5f2c8b98ecaacbed761b57e62e239e3b5161a982679bef15aff9b70",
+    "tap": "ramonvermeulen/whosthere",
+    "requires_backend_review": false,
+    "definition_url": "https://raw.githubusercontent.com/ramonvermeulen/homebrew-whosthere/HEAD/Casks/whosthere.rb"
+  }
+}

@@ -1,0 +1,222 @@
+# Draft workstation configuration. Nothing has been applied.
+# Reference schema: mise v2026.11.5, saved as mise.schema.json.
+min_version = "2026.11.5"
+
+[settings]
+auto_install = false
+idiomatic_version_file_enable_tools = ["ruby", "node", "python", "go", "rust"]
+
+[tools]
+# Observed ~/.rbenv/version; project .ruby-version takes precedence.
+ruby = "3.4.7"
+# Original installers did not pin these versions; requests remain floating.
+node = "lts"
+python = "latest"
+go = "latest"
+rust = { version = "stable", profile = "default", components = ["rust-src", "rust-analyzer"] }
+"go:golang.org/x/tools/gopls" = "latest"
+"gem:solargraph" = "latest"
+"gem:neovim" = "latest"
+"npm:vim-language-server" = "latest"
+"npm:basedpyright" = "latest"
+"npm:prettier" = "latest"
+"npm:@fsouza/prettierd" = "latest"
+"pypi:black" = "latest"
+"pypi:isort" = "latest"
+
+[env]
+HOST = "localhost"
+EDITOR = "nvim"
+GOPATH = "{{ env.HOME }}/go"
+ZSH_CACHE_DIR = "{{ env.HOME }}/.tmp/zsh"
+# Personal binaries and existing vendor installations; no installation implied.
+_.path = [
+  "{{ env.HOME }}/.local/bin",
+  "/opt/homebrew/opt/postgresql@15/bin",
+  "/opt/homebrew/opt/libpq/bin",
+  "/opt/homebrew/opt/openjdk/bin",
+  "{{ env.HOME }}/.local/opt/protobuf-2.6/bin",
+  "/opt/cprocsp/bin", "/opt/cprocsp/sbin",
+  "{{ env.HOME }}/go/bin",
+  "{{ env.HOME }}/.docker/bin",
+  "{{ env.HOME }}/.opencode/bin",
+  "{{ env.HOME }}/.minimax-code/bin",
+  "{{ env.HOME }}/.minimax/bin",
+]
+
+[bootstrap.brew]
+adopt = true
+
+# Declarative equivalents of the three defaults writes in install_osx.
+[bootstrap.macos.defaults.NSGlobalDomain]
+ApplePressAndHoldEnabled = false
+InitialKeyRepeat = 10
+KeyRepeat = 1
+
+# Individual files only: never replace ~/.vim or its installed plugins.
+[dotfiles]
+"~/.zprofile" = { source = ".zprofile", mode = "symlink" }
+"~/.zshrc" = { source = ".zshrc", mode = "symlink" }
+"~/.zsh_plugins.txt" = { source = ".zsh_plugins.txt", mode = "symlink" }
+"~/.gitconfig" = { source = ".gitconfig", mode = "symlink" }
+"~/.vimrc" = { source = "vim/.vimrc", mode = "symlink" }
+"~/.ctags" = { source = "vim/.ctags", mode = "symlink" }
+"~/.config/nvim/init.vim" = { source = "vim/init.vim", mode = "symlink" }
+"~/.vim/colors/bclear.vim" = { source = "vim/bclear.vim", mode = "symlink" }
+"~/.vim/colors/macvim.vim" = { source = "vim/macvim.vim", mode = "symlink" }
+
+# Packages: original dotfiles plus the installed workstation inventory (2026-11-09).
+[bootstrap.packages]
+
+# Command-line tools and system packages
+"brew:ansible" = { version = "latest", os = "macos" }
+"brew:antidote" = { version = "latest", os = "macos" }
+"brew:ast-grep" = { version = "latest", os = "macos" }
+"brew:bash" = { version = "latest", os = "macos" }
+"brew:bash-completion" = { version = "latest", os = "macos" }
+"brew:bash-git-prompt" = { version = "latest", os = "macos" }
+"brew:bat" = { version = "latest", os = "macos" }
+"brew:cask" = { version = "latest", os = "macos" }
+"brew:code-minimap" = { version = "latest", os = "macos" }
+"brew:coreutils" = { version = "latest", os = "macos" }
+"brew:curl" = { version = "latest", os = "macos" }
+"brew:dive" = { version = "latest", os = "macos" }
+"brew:docker-completion" = { version = "latest", os = "macos" }
+"brew:exiftool" = { version = "latest", os = "macos" }
+"brew:eza" = { version = "latest", os = "macos" }
+"brew:fd" = { version = "latest", os = "macos" }
+"brew:fish" = { version = "latest", os = "macos" }
+"brew:fzf" = { version = "latest", os = "macos" }
+"brew:gh" = { version = "latest", os = "macos" }
+"brew:git" = { version = "latest", os = "macos" }
+"brew:git-delta" = { version = "latest", os = "macos" }
+"brew:git-lfs" = { version = "latest", os = "macos" }
+"brew:git-quick-stats" = { version = "latest", os = "macos" }
+"brew:gnu-sed" = { version = "latest", os = "macos" }
+"brew:golangci-lint" = { version = "latest", os = "macos" }
+"brew:helix" = { version = "latest", os = "macos" }
+"brew:herdr" = { version = "latest", os = "macos" }
+"brew:htop" = { version = "latest", os = "macos" }
+"brew:imagemagick" = { version = "latest", os = "macos" }
+"brew:jq" = { version = "latest", os = "macos" }
+"brew:k9s" = { version = "latest", os = "macos" }
+"brew:kubectx" = { version = "latest", os = "macos" }
+"brew:kubernetes-cli" = { version = "latest", os = "macos" }
+"brew:lazygit" = { version = "latest", os = "macos" }
+"brew:libpq" = { version = "latest", os = "macos" }
+"brew:lua" = { version = "latest", os = "macos" }
+"brew:lua-language-server" = { version = "latest", os = "macos" }
+"brew:mysql" = { version = "latest", os = "macos" }
+"brew:naabu" = { version = "latest", os = "macos" }
+"brew:neovim" = { version = "latest", os = "macos" }
+"brew:openconnect" = { version = "latest", os = "macos" }
+"brew:openjdk" = { version = "latest", os = "macos" }
+"brew:openssl@3" = { version = "latest", os = "macos" }
+"brew:pandoc" = { version = "latest", os = "macos" }
+"brew:pgbadger" = { version = "latest", os = "macos" }
+"brew:pkgconf" = { version = "latest", os = "macos" }
+"brew:pngpaste" = { version = "latest", os = "macos" }
+"brew:poppler" = { version = "latest", os = "macos" }
+"brew:postgresql@15" = { version = "latest", os = "macos" }
+"brew:protobuf" = { version = "latest", os = "macos" }
+"brew:proxychains-ng" = { version = "latest", os = "macos" }
+"brew:pspg" = { version = "latest", os = "macos" }
+"brew:qemu" = { version = "latest", os = "macos" }
+"brew:rclone" = { version = "latest", os = "macos" }
+"brew:redis" = { version = "latest", os = "macos" }
+"brew:restic" = { version = "latest", os = "macos" }
+"brew:resticprofile" = { version = "latest", os = "macos" }
+"brew:ripgrep" = { version = "latest", os = "macos" }
+"brew:s3cmd" = { version = "latest", os = "macos" }
+"brew:sem-cli" = { version = "latest", os = "macos" }
+"brew:shared-mime-info" = { version = "latest", os = "macos" }
+"brew:stern" = { version = "latest", os = "macos" }
+"brew:stylua" = { version = "latest", os = "macos" }
+"brew:syncthing" = { version = "latest", os = "macos" }
+"brew:tesseract" = { version = "latest", os = "macos" }
+"brew:tree" = { version = "latest", os = "macos" }
+"brew:universal-ctags" = { version = "latest", os = "macos" }
+"brew:utf8proc" = { version = "latest", os = "macos" }
+"brew:uv" = { version = "latest", os = "macos" }
+"brew:vim" = { version = "latest", os = "macos" }
+"brew:vips" = { version = "latest", os = "macos" }
+"brew:wget" = { version = "latest", os = "macos" }
+"brew:wireshark" = { version = "latest", os = "macos" }
+
+# Command-line tools from third-party taps
+"brew:control-theory/gonzo/gonzo" = { version = "latest", os = "macos" }
+"brew:furkankly/tap/zoetrope" = { version = "latest", os = "macos" }
+"brew:johanneskaufmann/tap/html2markdown" = { version = "latest", os = "macos" }
+"brew:pavsap/clickhouse/clickhouse-server" = { version = "latest", os = "macos" }
+
+# Installed Nerd Fonts
+"brew-cask:font-droid-sans-mono-nerd-font" = { version = "latest", os = "macos" }
+"brew-cask:font-fantasque-sans-mono-nerd-font" = { version = "latest", os = "macos" }
+"brew-cask:font-fira-code-nerd-font" = { version = "latest", os = "macos" }
+"brew-cask:font-iosevka-nerd-font" = { version = "latest", os = "macos" }
+"brew-cask:font-jetbrains-mono-nerd-font" = { version = "latest", os = "macos" }
+"brew-cask:font-monoid-nerd-font" = { version = "latest", os = "macos" }
+"brew-cask:font-ubuntu-mono-nerd-font" = { version = "latest", os = "macos" }
+
+# Other fonts
+"brew-cask:font-cascadia-code" = { version = "latest", os = "macos" }
+"brew-cask:font-fantasque-sans-mono" = { version = "latest", os = "macos" }
+"brew-cask:font-fira-code" = { version = "latest", os = "macos" }
+"brew-cask:font-iosevka" = { version = "latest", os = "macos" }
+"brew-cask:font-jetbrains-mono" = { version = "latest", os = "macos" }
+"brew-cask:font-monoid" = { version = "latest", os = "macos" }
+"brew-cask:font-roboto" = { version = "latest", os = "macos" }
+"brew-cask:nanxstats/tap/font-anthrosevka-mono" = { version = "latest", os = "macos" }
+
+# macOS applications and cask utilities
+"brew-cask:anybar" = { version = "latest", os = "macos" }
+"brew-cask:basictex" = { version = "latest", os = "macos" }
+"brew-cask:betterdisplay" = { version = "latest", os = "macos" }
+"brew-cask:bruno" = { version = "latest", os = "macos" }
+"brew-cask:calibre" = { version = "latest", os = "macos" }
+"brew-cask:chatgpt" = { version = "latest", os = "macos" }
+"brew-cask:clickhouse" = { version = "latest", os = "macos" }
+"brew-cask:codex" = { version = "latest", os = "macos" }
+"brew-cask:db-browser-for-sqlite" = { version = "latest", os = "macos" }
+"brew-cask:dbeaver-community" = { version = "latest", os = "macos" }
+"brew-cask:docker-desktop" = { version = "latest", os = "macos" }
+"brew-cask:firefox" = { version = "latest", os = "macos" }
+"brew-cask:ghostex" = { version = "latest", os = "macos" }
+"brew-cask:ghostty" = { version = "latest", os = "macos" }
+"brew-cask:gimp" = { version = "latest", os = "macos" }
+"brew-cask:google-chrome" = { version = "latest", os = "macos" }
+"brew-cask:iterm2" = { version = "latest", os = "macos" }
+"brew-cask:keepassxc" = { version = "latest", os = "macos" }
+"brew-cask:libreoffice" = { version = "latest", os = "macos" }
+"brew-cask:macfuse" = { version = "latest", os = "macos" }
+"brew-cask:ngrok" = { version = "latest", os = "macos" }
+"brew-cask:obsidian" = { version = "latest", os = "macos" }
+"brew-cask:pgadmin4" = { version = "latest", os = "macos" }
+"brew-cask:podman-desktop" = { version = "latest", os = "macos" }
+"brew-cask:slack" = { version = "latest", os = "macos" }
+"brew-cask:sublime-merge" = { version = "latest", os = "macos" }
+"brew-cask:sublime-text" = { version = "latest", os = "macos" }
+"brew-cask:syncthing-app" = { version = "latest", os = "macos" }
+"brew-cask:telegram-desktop" = { version = "latest", os = "macos" }
+"brew-cask:visual-studio-code" = { version = "latest", os = "macos" }
+"brew-cask:vlc" = { version = "latest", os = "macos" }
+"brew-cask:yandex-disk" = { version = "latest", os = "macos" }
+
+# macOS applications from third-party taps
+"brew-cask:muxy-app/tap/muxy" = { version = "latest", os = "macos" }
+"brew-cask:penso/tap/herdr-gpui" = { version = "latest", os = "macos" }
+"brew-cask:ramonvermeulen/whosthere/whosthere" = { version = "latest", os = "macos" }
+"brew-cask:stablyai/orca/orca" = { version = "latest", os = "macos" }
+
+# Retained for reference; not enabled because the cask is disabled.
+# fails_gatekeeper_check
+# "brew-cask:alacritty" = { version = "latest", os = "macos" }
+# fails_gatekeeper_check
+# "brew-cask:macdown" = { version = "latest", os = "macos" }
+# fails_gatekeeper_check
+# "brew-cask:rar" = { version = "latest", os = "macos" }
+# fails_gatekeeper_check
+# "brew-cask:shadowsocksx-ng" = { version = "latest", os = "macos" }
+
+# Legacy brew-cask:syncthing is now brew-cask:syncthing-app.
+# Legacy brew-cask:docker is now brew-cask:docker-desktop.

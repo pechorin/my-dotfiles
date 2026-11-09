@@ -18,6 +18,10 @@ Plug 'rachartier/tiny-glimmer.nvim'  " Visual effects
 " Plug 'luiscassih/AniMotion.nvim'     " Motions like in helix
 Plug 'rgroli/other.nvim'
 
+Plug 'ChmaraX/herdr-nvim'
+
+Plug 'OXY2DEV/markview.nvim'
+
 " -- editing --
 Plug 'tpope/vim-commentary'
 Plug 'vim-scripts/CursorLineCurrentWindow'
@@ -27,11 +31,12 @@ Plug 'gcmt/wildfire.vim'           " Cycle thought text objects
 Plug 'jinh0/eyeliner.nvim'         " Move faster with unique f/F indicators for each word on the line.
 Plug 'dhruvasagar/vim-table-mode'  " Table-mode support
 Plug 'abecodes/tabout.nvim'
+Plug 'stevearc/conform.nvim'
 
 " Plug 'gbprod/cutlass.nvim'
 
 " -- tree-sitter --
-Plug 'nvim-treesitter/nvim-treesitter', { 'branch': 'master' }
+Plug 'nvim-treesitter/nvim-treesitter', { 'branch': 'main' }
 " Plug 'nvim-treesitter/playground'
 
 " -- lsp --
@@ -113,7 +118,7 @@ Plug 'majutsushi/tagbar'
 Plug 'ibhagwan/fzf-lua'
 
 " -- languages --
-Plug 'tpope/vim-rbenv'
+" Ruby is selected by mise through PATH.
 Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-bundler'
@@ -184,5 +189,8 @@ Plug 'pechorin/vim-leuven-theme'
 Plug 'echasnovski/mini.ai'       " additional text objects
 Plug 'echasnovski/mini.surround' " change surroundings on fly
 Plug 'echasnovski/mini.cursorword'
+
+" -- ai shit
+" Plug 'yetone/avante.nvim', { 'branch': 'main', 'do': 'make' }
 
 call plug#end()

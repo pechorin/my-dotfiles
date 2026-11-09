@@ -13,12 +13,12 @@ local vim_files_path  = vim.fn.resolve(vim.fn.expand('<sfile>:p'))
 vim_files_path        = vim.fn.substitute(vim_files_path, main_init_file, '', '')
 
 -- Load all configuration files
-local configs_paths = io.popen('ls -1 ' .. vim_files_path .. ' | grep -e \"^\\d\" | sort', 'r')
-if configs_paths then
-  for config_file in configs_paths:lines() do
-    if config_file ~= main_init_file then
-      vim.fn.execute('source ' .. vim_files_path .. config_file)
-    end
+local configs_paths = vim.fn.glob(vim_files_path .. '[0-9]*', false, true)
+table.sort(configs_paths)
+for _, config_file in ipairs(configs_paths) do
+  if vim.fn.fnamemodify(config_file, ':t') ~= main_init_file
+      and (config_file:match('%.lua$') or config_file:match('%.vim$')) then
+    vim.cmd('source ' .. vim.fn.fnameescape(config_file))
   end
 end
 

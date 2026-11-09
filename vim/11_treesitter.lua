@@ -9,14 +9,14 @@ local nvim_treesitter = {
   }
 }
 
-require("nvim-treesitter.install").prefer_git = true
+-- require("nvim-treesitter.install").prefer_git = true
 
-require('nvim-treesitter.configs').setup {
-  ensure_installed = nvim_treesitter.languages,
-  sync_install     = true,
-  auto_install     = true,
-  highlight        = { enable = true },
-}
+-- require('nvim-treesitter.configs').setup {
+--   ensure_installed = nvim_treesitter.languages,
+--   sync_install     = true,
+--   auto_install     = true,
+--   highlight        = { enable = true },
+-- }
 
 vim.api.nvim_create_autocmd('FileType', {
   pattern = { '<filetype>' },

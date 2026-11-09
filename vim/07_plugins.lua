@@ -18,8 +18,7 @@ require("nvim-autopairs").setup({
 })
 
 require('eyeliner').setup({
-  highlight_on_key = true, -- show highlights only after keypress
-  dim = false              -- dim all other characters if set to true (recommended!)
+  highlight_on_key = true, -- show highlights only after keypress dim = false              -- dim all other characters if set to true (recommended!)
 })
 
 require('gitsigns').setup({
@@ -63,7 +62,10 @@ require("which-key").setup({
     { "<auto>", mode = "nixsotc" },
     { "a", mode = { "n", "v" } },
   },
+  notify=false
 })
+
+-- require('which-key.health').setup({ notify = false })
 
 -- require('symbol-usage').setup()
 
@@ -94,3 +96,37 @@ require("fzf-lua").setup({
 -- })
 
 require('mtoc').setup({})
+
+
+-- Formatting
+require("conform").setup({
+  formatters_by_ft = {
+    lua = { "stylua" },
+    -- Conform will run multiple formatters sequentially
+    python = { "isort", "black" },
+    -- You can customize some of the format options for the filetype (:help conform.format)
+    rust = { "rustfmt", lsp_format = "fallback" },
+    -- Conform will run the first available formatter
+    javascript = { "prettierd", "prettier", stop_after_first = true },
+    json = { "jq" }
+  },
+})
+
+vim.api.nvim_create_user_command("Format", function(args)
+  local range = nil
+  if args.count ~= -1 then
+    local end_line = vim.api.nvim_buf_get_lines(0, args.line2 - 1, args.line2, true)[1]
+    range = {
+      start = { args.line1, 0 },
+      ["end"] = { args.line2, end_line:len() },
+    }
+  end
+  require("conform").format({ async = true, lsp_format = "fallback", range = range })
+end, { range = true })
+
+
+require("herdr-nvim").setup({
+  prefix = "<leader>h",     -- keymap prefix
+  keymaps = true,           -- set false to define your own
+  clear_after_send = true,  -- comments are ephemeral by design
+})

@@ -58,15 +58,15 @@ require('lualine').setup({
   -- },
   winbar = {
     lualine_a = {
-      {
-        'navic',
-        color_correction = 'dynamic',
-        navic_opts = {
-          highlight = true,
-          click = true,
-          separator = '  '
-        }
-      },
+      -- {
+      --   'navic',
+      --   color_correction = 'dynamic',
+      --   navic_opts = {
+      --     highlight = true,
+      --     click = true,
+      --     separator = '  '
+      --   }
+      -- },
     },
     lualine_z = {
       { 'filename', path = 1, newfile_status = true },

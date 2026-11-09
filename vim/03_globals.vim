@@ -28,8 +28,10 @@ let test#ruby#rspec#options = {
 \}
 
 " ~ ruby
-let g:ruby_path             = system('rbenv prefix')
-let g:ruby_host_prog        = substitute(system('rbenv prefix') .. '/bin/ruby', "\n", '', 'g')
+let g:ruby_path             = fnamemodify(exepath('ruby'), ':h:h')
+if executable('neovim-ruby-host')
+  let g:ruby_host_prog = exepath('neovim-ruby-host')
+endif
 let g:ruby_operators        = 1
 let g:ruby_pseudo_operators = 1
 let g:ruby_no_expensive     = 1

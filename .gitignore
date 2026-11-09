@@ -1,10 +1,37 @@
-.vim/bundle/*
-.vim/autoload/*
-.vim/sessions/*
-
-.vim/lua/.git
-.vim/lua/readme*
-.vim/lua/examples*
-
+# macOS metadata
 .DS_Store
+._*
+
+# Local configuration and credentials (keep example files trackable)
+.env
+.env.*
+!.env.example
+!.env.*.example
+/secrets/
+mise.local.toml
+mise.*.local.toml
+.mise.local.toml
+.mise.*.local.toml
+
+# Python and local caches
+__pycache__/
+*.py[cod]
+.venv/
+/.cache/
+/.mise/cache/
+/.mise/tmp/
+
+# Editor state and temporary files
+*.swp
+*.swo
+*.swn
+*~
+*.un~
+Session.vim
 tags
+tags.lock
+tags.temp
+
+# Downloaded Vim plugins and session state
+/vim/bundle/
+/vim/sessions/
