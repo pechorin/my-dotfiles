@@ -15,7 +15,7 @@
 
 ## Окружение
 
-В mise описаны Node LTS, Python, Go и Rust, а также языковые серверы и форматтеры для редактора. Версии для отдельных проектов можно задавать в их конфигах.
+В mise описаны Node LTS, Go и Rust, а также языковые серверы и форматтеры для редактора. Версии для отдельных проектов можно задавать в их конфигах.
 
 Ruby управляется через rbenv: mise устанавливает `rbenv` и `ruby-build` как пакеты Homebrew, а Zsh подключает rbenv. Управление Ruby в mise отключено. rbenv использует установки из `~/.rbenv/versions`, глобальную версию из `~/.rbenv/version` и проектные `.ruby-version`.
 
@@ -26,6 +26,16 @@ mise bootstrap packages apply brew:rbenv brew:ruby-build
 ```
 
 На новой машине Ruby нужно установить отдельно, например `rbenv install -s 3.4.7`, и выбрать по умолчанию через `rbenv global 3.4.7`. Для проекта установи версию из его `.ruby-version`. После установки гемов с исполняемыми файлами при необходимости выполни `rbenv rehash`.
+
+Python управляется через pyenv: mise устанавливает пакет Homebrew, `.zprofile` добавляет shims для login-shell, а `.zshrc` инициализирует pyenv для интерактивных сессий. Управление Python в mise отключено. pyenv использует установки из `~/.pyenv/versions` (или `$PYENV_ROOT/versions`), глобальную версию и проектные `.python-version`.
+
+Чтобы установить pyenv отдельно:
+
+```sh
+mise bootstrap packages apply brew:pyenv
+```
+
+Версии Python устанавливаются через `pyenv install <версия>`, версия по умолчанию выбирается через `pyenv global <версия>`, а для проекта — через `pyenv local <версия>`. После установки пакетов с исполняемыми файлами при необходимости выполни `pyenv rehash`.
 
 Пакеты Homebrew лежат в том же файле, в `[bootstrap.packages]`: от `ripgrep`, `fzf` и `jq` до Docker, баз данных и приложений для macOS. Там же — Nerd Fonts: Iosevka, JetBrains Mono, Fira Code и ещё несколько семейств. Шрифт в терминале нужно выбрать отдельно.
 
