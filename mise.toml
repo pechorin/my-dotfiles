@@ -4,11 +4,11 @@ min_version = "2026.11.5"
 
 [settings]
 auto_install = false
-idiomatic_version_file_enable_tools = ["ruby", "node", "python", "go", "rust"]
+# Ruby versions and .ruby-version files are managed by rbenv.
+disable_tools = ["ruby"]
+idiomatic_version_file_enable_tools = ["node", "python", "go", "rust"]
 
 [tools]
-# Observed ~/.rbenv/version; project .ruby-version takes precedence.
-ruby = "3.4.7"
 # Original installers did not pin these versions; requests remain floating.
 node = "lts"
 python = "latest"
@@ -31,6 +31,7 @@ GOPATH = "{{ env.HOME }}/go"
 ZSH_CACHE_DIR = "{{ env.HOME }}/.tmp/zsh"
 # Personal binaries and existing vendor installations; no installation implied.
 _.path = [
+  "{{ env.HOME }}/.rbenv/shims",
   "{{ env.HOME }}/.local/bin",
   "/opt/homebrew/opt/postgresql@15/bin",
   "/opt/homebrew/opt/libpq/bin",
@@ -122,11 +123,13 @@ KeyRepeat = 1
 "brew:proxychains-ng" = { version = "latest", os = "macos" }
 "brew:pspg" = { version = "latest", os = "macos" }
 "brew:qemu" = { version = "latest", os = "macos" }
+"brew:rbenv" = { version = "latest", os = "macos" }
 "brew:rclone" = { version = "latest", os = "macos" }
 "brew:redis" = { version = "latest", os = "macos" }
 "brew:restic" = { version = "latest", os = "macos" }
 "brew:resticprofile" = { version = "latest", os = "macos" }
 "brew:ripgrep" = { version = "latest", os = "macos" }
+"brew:ruby-build" = { version = "latest", os = "macos" }
 "brew:s3cmd" = { version = "latest", os = "macos" }
 "brew:sem-cli" = { version = "latest", os = "macos" }
 "brew:shared-mime-info" = { version = "latest", os = "macos" }

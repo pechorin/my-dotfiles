@@ -1,3 +1,7 @@
+# The following lines were added by Docker Desktop to add commands to your PATH.
+export PATH="$PATH:/Users/vorobey/.docker/bin"
+# End of Docker Desktop section.
+
 # Shared workstation configuration.
 export MISE_GLOBAL_CONFIG_FILE="$HOME/my-dotfiles/mise.toml"
 export HOST=localhost
@@ -18,4 +22,4 @@ fi
 [[ ! -r "$HOME/.secrets/forgejo_token" ]] || export FORGEJO_TOKEN="$(<"$HOME/.secrets/forgejo_token")"
 
 # Shims for non-interactive login shells. Interactive shells activate in .zshrc.
-path=("${MISE_DATA_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/mise}/shims" $path)
+path=("${RBENV_ROOT:-$HOME/.rbenv}/shims" "${MISE_DATA_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/mise}/shims" $path)

@@ -10,9 +10,14 @@ path=("$HOME/.local/bin" /opt/homebrew/bin /opt/homebrew/sbin $path)
 [[ ! -r "$HOME/yandex-cloud/path.bash.inc" ]] || source "$HOME/yandex-cloud/path.bash.inc"
 [[ ! -r "$HOME/yandex-cloud/completion.zsh.inc" ]] || source "$HOME/yandex-cloud/completion.zsh.inc"
 
-# mise replaces rbenv / fnm / pyenv initialization.
+# mise manages tools other than Ruby.
 if (( $+commands[mise] )); then
   eval "$(mise activate zsh)"
+fi
+
+# Ruby uses the existing rbenv installations and project .ruby-version files.
+if (( $+commands[rbenv] )); then
+  eval "$(rbenv init - --no-rehash zsh)"
 fi
 
 fpath=("$HOME/.zsh/completions" $fpath)
