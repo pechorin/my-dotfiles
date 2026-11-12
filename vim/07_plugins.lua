@@ -1,6 +1,5 @@
 require('overseer').setup({})
 require("fidget").setup({})
-require('neotest').setup({ adapters = { require('neotest-rspec'), } })
 require('diagflow').setup({ padding_top = 5, text_align = 'left' })
 require("scrollbar").setup()
 
@@ -48,7 +47,8 @@ vim.opt.shell = '/bin/zsh -l'
 -- ]]
 
 -- ripgrep
-vim.opt.grepprg = 'rg --color=never'
+vim.opt.grepprg = 'rg --vimgrep --smart-case'
+vim.opt.grepformat = '%f:%l:%c:%m'
 
 -- Grug-far search
 require('grug-far').setup({
@@ -66,18 +66,10 @@ require("which-key").setup({
 })
 
 -- require('which-key.health').setup({ notify = false })
-
--- require('symbol-usage').setup()
-
--- A tiny Neovim plugin that adds subtle animations to various operations.
--- require('tiny-glimmer').setup({
---   paste = { enable = true },
---   undo  = { enable = true },
---   redo  = { enable = true },
---   support = {
---     substitute = { enabled = false }
---   },
--- })
+require('which-key').add({
+  { '<leader>e', group = 'Colors / Vim config' },
+  { '<leader>g', group = 'Git' },
+})
 
 -- fzf-lua
 require("fzf-lua").setup({
@@ -94,6 +86,8 @@ require("fzf-lua").setup({
 
 -- require("cutlass").setup({
 -- })
+
+require('fzf-lua').register_ui_select()
 
 require('mtoc').setup({})
 

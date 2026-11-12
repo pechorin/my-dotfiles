@@ -29,11 +29,7 @@ set clipboard=unnamed,unnamedplus
 set termguicolors
 set title        " set terminal title
 
-function! Wildignore()
-  return &wildignore + '\.hg,\.git,\.svn,*.DS_Store,*.pyc'
-endfunction
-
-set wildignore=Wildignore()
+set wildignore+=*/.hg/*,*/.git/*,*/.svn/*,*.DS_Store,*.pyc
 set wildmenu
 set wildmode=full
 

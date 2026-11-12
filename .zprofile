@@ -21,6 +21,7 @@ fi
 [[ ! -r "$HOME/.secrets/github_token" ]] || export BUNDLE_GITHUB__COM="$(<"$HOME/.secrets/github_token")"
 [[ ! -r "$HOME/.secrets/minimax" ]] || export MCODE_PROVIDER_API_KEY="$(<"$HOME/.secrets/minimax")"
 [[ ! -r "$HOME/.secrets/forgejo_token" ]] || export FORGEJO_TOKEN="$(<"$HOME/.secrets/forgejo_token")"
+[[ ! -r "$HOME/.secrets/telegram_private_bot_token" ]] || export TELEGRAM_PRIVATE_BOT_TOKEN="$(<"$HOME/.secrets/telegram_private_bot_token")"
 
 # Shims for non-interactive login shells. Interactive shells activate in .zshrc.
 path=("${RBENV_ROOT:-$HOME/.rbenv}/shims" "$PYENV_ROOT/shims" "${MISE_DATA_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/mise}/shims" $path)

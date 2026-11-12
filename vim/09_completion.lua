@@ -3,7 +3,8 @@ local cmp = require('cmp')
 local cmp_autopairs = require('nvim-autopairs.completion.cmp')
 local lspkind = require('lspkind')
 
-require("lsp_signature").setup({})
+-- Automatically show signatures while typing function arguments.
+require('lsp_signature').setup({ floating_window = true })
 
 -- Add parentheses after selecting function or method item
 cmp.event:on('confirm_done', cmp_autopairs.on_confirm_done())
@@ -48,7 +49,6 @@ cmp.setup({
         end
       }
     },
-    -- { name = 'tags' },
     -- { name = "rg" },
   }),
   -- snippet = {
@@ -92,7 +92,6 @@ cmp.setup.cmdline({ '/', '?' }, {
   mapping = cmp.mapping.preset.cmdline(),
   sources = {
     { name = 'buffer' },
-    -- { name = 'nvim_lsp_document_symbol' },
   }
 })
 
@@ -104,12 +103,3 @@ cmp.setup.cmdline(':', {
     { name = 'async_path' },
   })
 })
-
--- TODO:
-
--- Set up lspconfig.
--- local capabilities = require('cmp_nvim_lsp').default_capabilities()
-
--- require('lspconfig').solargraph.setup {
---   capabilities = capabilities
--- }

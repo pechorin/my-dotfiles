@@ -3,13 +3,13 @@ local alpha_start_dashboard = {
   buttons = {
     {"e", " > New File", "<cmd>ene<CR>"},
     {"n", " > Toggle file explorer", "<cmd>Neotree<CR>"},
-    {"f", " > Find File", "<cmd>Telescope find_files<CR>"},
-    {"F", " > Find Word", "<cmd>Telescope live_grep<CR>"},
-    {"m", " > Keymaps", "<cmd>Telescope keymaps<CR>"},
+    {"f", " > Find File", "<cmd>FzfLua files<CR>"},
+    {"F", " > Find Word", "<cmd>FzfLua live_grep<CR>"},
+    {"m", " > Keymaps", "<cmd>FzfLua keymaps<CR>"},
     {"g", " > Git status", "<cmd>Git<CR>"},
     {"u", " > Update plugins", "<cmd>PlugUpdate<CR>"},
     {"H", " > Edit .vimrc", "<cmd>e ~/.vimrc<CR>"},
-    {"c", " > Change colorscheme", "<cmd>Telescope themes<CR>"},
+    {"c", " > Change colorscheme", "<cmd>FzfLua colorschemes<CR>"},
   }
 }
 

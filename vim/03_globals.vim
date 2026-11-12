@@ -17,16 +17,6 @@ let NERDTreeWinSize    = 25
 " ~ markdown
 let g:vim_markdown_folding_disabled = 1
 
-" ~ vim-test
-let test#strategy             = "neovim"
-let test#neovim#term_position = "rightbelow 25"
-let test#preserve_screen      = 1
-let test#neovim#start_normal  = 1
-
-let test#ruby#rspec#options = {
-  \ 'file': '--format documentation',
-\}
-
 " ~ ruby
 let g:ruby_path             = fnamemodify(exepath('ruby'), ':h:h')
 if executable('neovim-ruby-host')

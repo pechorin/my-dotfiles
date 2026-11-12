@@ -6,16 +6,12 @@ call plug#begin('~/.vim/bundle')
 Plug 'ray-x/guihua.lua', { 'do': 'cd lua/fzy && make' }
 Plug 'nvim-lua/plenary.nvim'
 Plug 'MunifTanjim/nui.nvim'
-Plug 'folke/neodev.nvim'  " Vim development
 
 " -- editor --
 Plug 'tiagovla/scope.nvim'           " Make buffers scoped to tab page
 Plug 'folke/which-key.nvim'          " Display key definitions in cool menu
 Plug 'simeji/winresizer'             " Resize windows with ctrl+e
 Plug 'AndrewRadev/linediff.vim'      " Diff between lines
-" Plug 'folke/noice.nvim'              " UI features like custom pop cmdline
-Plug 'rachartier/tiny-glimmer.nvim'  " Visual effects
-" Plug 'luiscassih/AniMotion.nvim'     " Motions like in helix
 Plug 'rgroli/other.nvim'
 
 Plug 'ChmaraX/herdr-nvim'
@@ -23,7 +19,6 @@ Plug 'ChmaraX/herdr-nvim'
 Plug 'OXY2DEV/markview.nvim'
 
 " -- editing --
-Plug 'tpope/vim-commentary'
 Plug 'vim-scripts/CursorLineCurrentWindow'
 Plug 'junegunn/vim-easy-align'
 Plug 'AndrewRadev/splitjoin.vim'
@@ -36,16 +31,12 @@ Plug 'stevearc/conform.nvim'
 " Plug 'gbprod/cutlass.nvim'
 
 " -- tree-sitter --
-Plug 'nvim-treesitter/nvim-treesitter', { 'branch': 'main' }
+Plug 'nvim-treesitter/nvim-treesitter', { 'branch': 'main', 'do': ':TSUpdate' }
 " Plug 'nvim-treesitter/playground'
 
 " -- lsp --
 Plug 'neovim/nvim-lspconfig'
 Plug 'onsails/lspkind.nvim'
-Plug 'RishabhRD/popfix'
-Plug 'RishabhRD/nvim-lsputils'
-Plug 'zeioth/garbage-day.nvim' " stop inactive lsp servers
-Plug 'Wansmer/symbol-usage.nvim'
 
 " -- code completion --
 Plug 'iguanacucumber/magazine.nvim', { 'as': 'nvim-cmp' }
@@ -54,12 +45,8 @@ Plug 'iguanacucumber/mag-buffer', { 'as': 'cmp-buffer' }
 Plug 'iguanacucumber/mag-cmdline', { 'as': 'cmp-cmdline' }
 
 Plug 'https://codeberg.org/FelipeLema/cmp-async-path'
-Plug 'hrsh7th/cmp-path'
 
-Plug 'hrsh7th/cmp-nvim-lsp-document-symbol'
 Plug 'ray-x/lsp_signature.nvim'
-Plug 'quangnguyen30192/cmp-nvim-tags'
-Plug 'hrsh7th/cmp-omni'
 " Plug 'saadparwaiz1/cmp_luasnip'
 
 " -- snippets --
@@ -92,19 +79,9 @@ Plug 'stevearc/overseer.nvim'      " Command runner with ui
 Plug 'SmiteshP/nvim-navic'         " Show lsp path in window header
 Plug 'petertriho/nvim-scrollbar'   " Custom scrollbar
 
-" -- start dashboard --
-Plug 'goolord/alpha-nvim'
-
 " -- git --
 Plug 'tpope/vim-fugitive'
 Plug 'lewis6991/gitsigns.nvim'
-
-" -- tests --
-Plug 'tpope/vim-dispatch'
-Plug 'janko-m/vim-test'
-Plug 'nvim-neotest/nvim-nio'
-Plug 'nvim-neotest/neotest'
-Plug 'olimorris/neotest-rspec'
 
 " -- ctags --
 Plug 'ludovicchabant/vim-gutentags'
@@ -125,23 +102,15 @@ Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-haml'
 Plug 'plasticboy/vim-markdown'
-Plug 'jelera/vim-javascript-syntax'
-Plug 'pangloss/vim-javascript'
-Plug 'MaxMEllon/vim-jsx-pretty'
-Plug 'mitsuhiko/jinja2'
-Plug 'leafgarland/typescript-vim'
-Plug 'peitalin/vim-jsx-typescript'
 Plug 'elixir-editors/vim-elixir'
 Plug 'slashmili/alchemist.vim'
-Plug 'racer-rust/vim-racer'
 Plug 'rust-lang/rust.vim'
-Plug 'lepture/vim-jinja'
+Plug 'lepture/vim-jinja'          " Jinja indentation; highlighting uses Tree-sitter
 Plug 'ap/vim-css-color'
 Plug 'pearofducks/ansible-vim'
 Plug 'ekalinin/Dockerfile.vim'
 Plug 'chr4/nginx.vim'
 Plug 'slim-template/vim-slim'
-Plug 'vim-utils/vim-man'
 
 Plug 'hedyhli/markdown-toc.nvim'
 
@@ -150,9 +119,6 @@ Plug 'nvim-tree/nvim-web-devicons'
 
 " -- Golang support --
 Plug 'ray-x/go.nvim'
-
-" TODO move to group
-" Plug 'mfussenegger/nvim-lint'
 
 " -- colorschemes --
 Plug 'rktjmp/lush.nvim'
@@ -176,13 +142,11 @@ Plug 'pechorin/adwaita.nvim', { 'commit': 'c9379097755701ab597140bafd097fbaff3dd
 Plug 'Verf/deepwhite.nvim'
 Plug 'MetriC-DT/balance-theme.nvim'
 
-
 " minimal style themes
 Plug 'kkga/vim-envy'
 
 " -- in_development --
 Plug 'pechorin/any-jump.vim'
-Plug 'pechorin/u-keymapper.vim'
 Plug 'pechorin/vim-leuven-theme'
 
 " -- mini.* plugins
